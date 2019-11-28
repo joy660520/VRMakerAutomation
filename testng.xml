@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="VRMaker Automation Test" parallel="tests"
+	thread-count="1">
+
+
+
+	<test name="regression test">
+
+		<parameter name="username" value="joy@staging.com.tw"></parameter>
+		<parameter name="password" value="000000"></parameter>
+
+
+		<classes>
+			<class name="cases.AccountLogoutTest"></class>
+			<!-- <class name="cases.AccountLogoutTest"></class>
+			<class name="cases.CreateNewLiveTourTest"></class> -->
+			<!-- <class name="cases.AccountLogoutTest"></class>
+			<class name="cases.CreateNewLiveTourTest"></class> 
+			<class name="cases.AccountLoginTest"></class>
+			-->
+
+		</classes>
+	</test>
+
+</suite>
+
+

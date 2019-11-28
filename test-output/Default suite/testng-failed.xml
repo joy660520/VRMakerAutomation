@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]">
+  <parameter name="password" value="param-val-not-found"/>
+  <parameter name="username" value="param-val-not-found"/>
+  <test name="Default test(failed)">
+    <classes>
+      <class name="cases.AccountLoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="validLoginTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cases.AccountLoginTest -->
+      <class name="cases.CreateNewLiveTourTest">
+        <methods>
+          <include name="setup"/>
+          <include name="validLoginTest"/>
+          <include name="tearDown"/>
+          <include name="createNewLiveTourTest"/>
+        </methods>
+      </class> <!-- cases.CreateNewLiveTourTest -->
+      <class name="cases.AccountLogoutTest">
+        <methods>
+          <include name="setup"/>
+          <include name="validLoginTest"/>
+          <include name="tearDown"/>
+          <include name="accountLogoutTest"/>
+        </methods>
+      </class> <!-- cases.AccountLogoutTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [VRMaker Regression Test]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="000000"/>
+  <parameter name="username" value="joy@staging.com.tw"/>
+  <test parallel="tests" name="regression test(failed)">
+    <parameter name="password" value="000000"/>
+    <parameter name="username" value="joy@staging.com.tw"/>
+    <classes>
+      <class name="cases.CreateNewLiveTourTest">
+        <methods>
+          <include name="validLoginTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- cases.CreateNewLiveTourTest -->
+    </classes>
+  </test> <!-- regression test(failed) -->
+</suite> <!-- Failed suite [VRMaker Regression Test] -->
