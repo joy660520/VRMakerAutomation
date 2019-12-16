@@ -16,20 +16,18 @@ import model.UserModel;
 import tasks.AccountLogin;
 import tasks.AccountLogout;
 import tasks.CreateNewLiveTour;
-import tasks.ValidLogin;
+
 import util.Constants;
-import util.SetCapacities;
 
 import org.testng.annotations.Parameters;
 
 public class CreateNewLiveTourTest extends AccountLoginTest {
 
 	@Test
-	public void createNewLiveTourTest() throws Exception {
-		AccountLogin al=new AccountLogin(driver);
-		al.accountLogin(userModel);
+	public void runTest() throws Exception {
+		
 		CreateNewLiveTour ct = new CreateNewLiveTour(driver);
-		ct.createNewLiveTour();
+		ct.createNewLiveTour(userModel);
 
 	}
 

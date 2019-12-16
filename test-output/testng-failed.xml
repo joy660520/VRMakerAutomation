@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <parameter name="password" value="param-val-not-found"/>
-  <parameter name="username" value="param-val-not-found"/>
-  <test name="Default test(failed)">
+<suite thread-count="1" parallel="tests" name="Failed suite [VRMaker Automation Test]">
+  <parameter name="password" value="000000"/>
+  <parameter name="username" value="joy@staging.com.tw"/>
+  <test parallel="tests" name="regression test(failed)">
+    <parameter name="password" value="000000"/>
+    <parameter name="username" value="joy@staging.com.tw"/>
     <classes>
-      <class name="cases.AccountLoginTest">
+      <class name="cases.InvalidLoginTest">
         <methods>
           <include name="setup"/>
-          <include name="validLoginTest"/>
           <include name="tearDown"/>
+          <include name="runTest"/>
         </methods>
-      </class> <!-- cases.AccountLoginTest -->
-      <class name="cases.CreateNewLiveTourTest">
-        <methods>
-          <include name="setup"/>
-          <include name="validLoginTest"/>
-          <include name="tearDown"/>
-          <include name="createNewLiveTourTest"/>
-        </methods>
-      </class> <!-- cases.CreateNewLiveTourTest -->
-      <class name="cases.AccountLogoutTest">
-        <methods>
-          <include name="setup"/>
-          <include name="validLoginTest"/>
-          <include name="tearDown"/>
-          <include name="accountLogoutTest"/>
-        </methods>
-      </class> <!-- cases.AccountLogoutTest -->
+      </class> <!-- cases.InvalidLoginTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- regression test(failed) -->
+</suite> <!-- Failed suite [VRMaker Automation Test] -->

@@ -12,13 +12,15 @@
 
 
 		<classes>
-			<class name="cases.AccountLogoutTest"></class>
-			<!-- <class name="cases.AccountLogoutTest"></class>
-			<class name="cases.CreateNewLiveTourTest"></class> -->
-			<!-- <class name="cases.AccountLogoutTest"></class>
-			<class name="cases.CreateNewLiveTourTest"></class> 
-			<class name="cases.AccountLoginTest"></class>
-			-->
+			<class name="cases.InvalidLoginTest"></class>
+			<!-- <class name="cases.WelcomePageTest"></class> -->
+			<!-- <class name="cases.DeleteLiveTourTest"></class> -->
+			<!-- <class name="cases.AccountLoginTest"></class> -->
+			<!-- <class name="cases.AccountLogoutTest"></class> -->
+			<!-- <class name="cases.CreateNewLiveTourTest"></class> -->
+
+
+
 
 		</classes>
 	</test>

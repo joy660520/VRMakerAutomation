@@ -17,17 +17,14 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-
-
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AutomationName;
 import io.appium.java_client.remote.MobileCapabilityType;
 import model.UserModel;
 import tasks.AccountLogin;
-import tasks.ValidLogin;
+
 import util.Element;
-import util.SetCapacities;
 
 import org.testng.annotations.Parameters;
 
@@ -61,7 +58,8 @@ public class AccountLoginTest {
 			// "/Users/joyshen/Desktop/vrmaker_android_e2e_testing/apk/app-release-prod.apk");
 			// // 安裝apk，如果已經裝了apk，可以不用這行
 			capabilities.setCapability("autoGrantPermissions", true);
-			capabilities.setCapability("unicodeKeyboard", true); // disable the keyboard (using appium IME but it's transparent, not affect sendkeys)
+			capabilities.setCapability("unicodeKeyboard", true); // disable the keyboard (using appium IME but it's
+																	// transparent, not affect sendkeys)
 			capabilities.setCapability("autoAcceptAlerts", true);
 			capabilities.setCapability("resetKeyboard", true);
 			capabilities.setCapability("chromedriverExecutable",
@@ -72,7 +70,7 @@ public class AccountLoginTest {
 			ee.printStackTrace();
 		}
 		Thread.sleep(3000);
-	
+
 		userModel = new UserModel();
 		userModel.setName(username);
 		userModel.setPassword(password);
@@ -81,18 +79,18 @@ public class AccountLoginTest {
 	}
 
 	@Test
-	public void validLoginTest() throws Exception {
-		AccountLogin al=new AccountLogin(driver);
+	public void runTest() throws Exception {
+		AccountLogin al = new AccountLogin(driver);
 		al.accountLogin(userModel);
-		
+
 	}
 
 	@AfterMethod
 	public void tearDown(ITestResult testResult) throws Exception {
-//		driver = SetCapacities.driver;
+		// driver = SetCapacities.driver;
 		this.finalTestResult = testResult;
 		if (finalTestResult.getStatus() == ITestResult.FAILURE) {
-			Element el=new Element(driver);
+			Element el = new Element(driver);
 			el.getScreenshots();
 		}
 		driver.quit();

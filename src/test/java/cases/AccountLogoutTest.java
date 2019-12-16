@@ -15,19 +15,18 @@ import io.appium.java_client.android.AndroidDriver;
 import model.UserModel;
 import tasks.AccountLogin;
 import tasks.AccountLogout;
-import tasks.ValidLogin;
-import util.SetCapacities;
+
+
 
 import org.testng.annotations.Parameters;
 
 public class AccountLogoutTest extends AccountLoginTest {
 
 	@Test
-	public void accountLogoutTest() throws Exception {
-		AccountLogin al = new AccountLogin(driver);
-		al.accountLogin(userModel);
+	public void runTest() throws Exception {
+
 		AccountLogout aout = new AccountLogout(driver);
-		aout.accountLogout();
+		aout.accountLogout(userModel);
 	}
 
 }

@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,12 +101,7 @@
                     <div class="method-list-content passed suite-VRMaker_Automation_Test">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-VRMaker_Automation_Test" title="cases.AccountLogoutTest" class="method navigator-link" hash-for-method="accountLogoutTest">accountLogoutTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-VRMaker_Automation_Test" title="cases.AccountLogoutTest" class="method navigator-link" hash-for-method="validLoginTest">validLoginTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-VRMaker_Automation_Test" title="cases.InvalidLoginTest" class="method navigator-link" hash-for-method="runTest">runTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-VRMaker_Automation_Test -->
@@ -124,21 +119,14 @@
           <div class="suite-VRMaker_Automation_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">cases.AccountLogoutTest</span>
+              <span class="class-name">cases.InvalidLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="accountLogoutTest">
-                  </a> <!-- accountLogoutTest -->
-                  <span class="method-name">accountLogoutTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validLoginTest">
-                  </a> <!-- validLoginTest -->
-                  <span class="method-name">validLoginTest</span>
+                  <a name="runTest">
+                  </a> <!-- runTest -->
+                  <span class="method-name">runTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -146,7 +134,7 @@
         </div> <!-- panel VRMaker_Automation_Test -->
         <div panel-name="test-xml-VRMaker_Automation_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/joyshen/eclipse-workspace/VRMakerAutomation/testng.xml</span>
+            <span class="header-content">/Users/joyshen/VRMakerAutomation/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -157,7 +145,7 @@
     &lt;parameter name=&quot;password&quot; value=&quot;000000&quot;/&gt;
     &lt;parameter name=&quot;username&quot; value=&quot;joy@staging.com.tw&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;cases.AccountLogoutTest&quot;/&gt;
+      &lt;class name=&quot;cases.InvalidLoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- regression test --&gt;
 &lt;/suite&gt; &lt;!-- VRMaker Automation Test --&gt;
@@ -197,20 +185,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'accountLogoutTest')
-data.setCell(0, 2, 'cases.AccountLogoutTest')
-data.setCell(0, 3, 17452);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validLoginTest')
-data.setCell(1, 2, 'cases.AccountLogoutTest')
-data.setCell(1, 3, 9582);
+data.setCell(0, 1, 'runTest')
+data.setCell(0, 2, 'cases.InvalidLoginTest')
+data.setCell(0, 3, 6445);
 window.suiteTableData['VRMaker_Automation_Test']= { tableData: data, tableDiv: 'times-div-VRMaker_Automation_Test'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-VRMaker_Automation_Test">
               </div> <!-- times-div-VRMaker_Automation_Test -->
             </div> <!-- times-div -->
@@ -236,30 +220,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">cases.AccountLogoutTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">cases.InvalidLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(joy@staging.com.tw, 000000)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validLoginTest</span>
-                <span class="method-start">19457 ms</span>
+                <span class="method-name">runTest</span>
+                <span class="method-start">19633 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=validLoginTest status=SUCCESS method=AccountLoginTest.validLoginTest()[pri:0, insta...)</span>
-                <span class="method-start">29040 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(joy@staging.com.tw, 000000)</span>
-                <span class="method-start">29837 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">accountLogoutTest</span>
-                <span class="method-start">49744 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=accountLogoutTest status=SUCCESS method=AccountLogoutTest.accountLogoutTest()[pri:0...)</span>
-                <span class="method-start">67197 ms</span>
+                <span class="method-name">tearDown([TestResult name=runTest status=SUCCESS method=InvalidLoginTest.runTest()[pri:0, instance:cases.Inva...)</span>
+                <span class="method-start">26079 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
