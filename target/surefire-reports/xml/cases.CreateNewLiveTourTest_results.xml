@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="regression test"
-           tests="2"
+           tests="1"
            failures="0"
            errors="0"
            skipped="0"
-           time="30.457">
+           time="19.936">
   <properties />
   
   
-            <testcase name="validLoginTest" time="9.696" classname="cases.CreateNewLiveTourTest" />
-                <testcase name="createNewLiveTourTest" time="20.761" classname="cases.CreateNewLiveTourTest" />
+            <testcase name="runTest" time="19.936" classname="cases.CreateNewLiveTourTest" />
       
 </testsuite>
