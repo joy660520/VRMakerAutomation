@@ -14,6 +14,41 @@
           <include name="runTest"/>
         </methods>
       </class> <!-- cases.InvalidLoginTest -->
+      <class name="cases.WelcomePageTest">
+        <methods>
+          <include name="runTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cases.WelcomePageTest -->
+      <class name="cases.AccountLoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="runTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cases.AccountLoginTest -->
+      <class name="cases.CreateNewLiveTourTest">
+        <methods>
+          <include name="runTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cases.CreateNewLiveTourTest -->
+      <class name="cases.AccountLogoutTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="runTest"/>
+        </methods>
+      </class> <!-- cases.AccountLogoutTest -->
+      <class name="cases.DeleteLiveTourTest">
+        <methods>
+          <include name="runTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- cases.DeleteLiveTourTest -->
     </classes>
   </test> <!-- regression test(failed) -->
 </suite> <!-- Failed suite [VRMaker Automation Test] -->
