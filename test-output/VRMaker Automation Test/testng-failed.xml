@@ -7,48 +7,13 @@
     <parameter name="password" value="000000"/>
     <parameter name="username" value="joy@staging.com.tw"/>
     <classes>
-      <class name="cases.InvalidLoginTest">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="runTest"/>
-        </methods>
-      </class> <!-- cases.InvalidLoginTest -->
-      <class name="cases.WelcomePageTest">
+      <class name="cases.ImportPhotosFromGalleryTest">
         <methods>
           <include name="runTest"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- cases.WelcomePageTest -->
-      <class name="cases.AccountLoginTest">
-        <methods>
-          <include name="setup"/>
-          <include name="runTest"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- cases.AccountLoginTest -->
-      <class name="cases.CreateNewLiveTourTest">
-        <methods>
-          <include name="runTest"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- cases.CreateNewLiveTourTest -->
-      <class name="cases.AccountLogoutTest">
-        <methods>
-          <include name="setup"/>
-          <include name="tearDown"/>
-          <include name="runTest"/>
-        </methods>
-      </class> <!-- cases.AccountLogoutTest -->
-      <class name="cases.DeleteLiveTourTest">
-        <methods>
-          <include name="runTest"/>
-          <include name="setup"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- cases.DeleteLiveTourTest -->
+      </class> <!-- cases.ImportPhotosFromGalleryTest -->
     </classes>
   </test> <!-- regression test(failed) -->
 </suite> <!-- Failed suite [VRMaker Automation Test] -->

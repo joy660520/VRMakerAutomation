@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-VRMaker_Automation_Test" class="navigator-link">
-              <span class="suite-name border-failed">VRMaker Automation Test</span>
+              <span class="suite-name border-passed">VRMaker Automation Test</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,46 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 6 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-VRMaker_Automation_Test" class="hide-methods failed suite-VRMaker_Automation_Test"> (hide)</a> <!-- hide-methods failed suite-VRMaker_Automation_Test -->
-                      <a href="#" panel-name="suite-VRMaker_Automation_Test" class="show-methods failed suite-VRMaker_Automation_Test"> (show)</a> <!-- show-methods failed suite-VRMaker_Automation_Test -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-VRMaker_Automation_Test" class="hide-methods passed suite-VRMaker_Automation_Test"> (hide)</a> <!-- hide-methods passed suite-VRMaker_Automation_Test -->
+                      <a href="#" panel-name="suite-VRMaker_Automation_Test" class="show-methods passed suite-VRMaker_Automation_Test"> (show)</a> <!-- show-methods passed suite-VRMaker_Automation_Test -->
                     </span>
-                    <div class="method-list-content failed suite-VRMaker_Automation_Test">
+                    <div class="method-list-content passed suite-VRMaker_Automation_Test">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-VRMaker_Automation_Test" title="cases.DeleteLiveTourTest" class="method navigator-link" hash-for-method="runTest">runTest</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-VRMaker_Automation_Test" title="cases.ImportPhotosFromGalleryTest" class="method navigator-link" hash-for-method="runTest">runTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-VRMaker_Automation_Test" title="cases.InvalidLoginTest" class="method navigator-link" hash-for-method="runTest">runTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-VRMaker_Automation_Test" title="cases.AccountLogoutTest" class="method navigator-link" hash-for-method="runTest">runTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-VRMaker_Automation_Test" title="cases.WelcomePageTest" class="method navigator-link" hash-for-method="runTest">runTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-VRMaker_Automation_Test" title="cases.CreateNewLiveTourTest" class="method navigator-link" hash-for-method="runTest">runTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-VRMaker_Automation_Test" title="cases.AccountLoginTest" class="method navigator-link" hash-for-method="runTest">runTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-VRMaker_Automation_Test -->
+                    </div> <!-- method-list-content passed suite-VRMaker_Automation_Test -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -141,10 +116,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-VRMaker_Automation_Test" class="panel VRMaker_Automation_Test">
-          <div class="suite-VRMaker_Automation_Test-class-failed">
+          <div class="suite-VRMaker_Automation_Test-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">cases.InvalidLoginTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">cases.ImportPhotosFromGalleryTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -152,275 +127,10 @@
                   <a name="runTest">
                   </a> <!-- runTest -->
                   <span class="method-name">runTest</span>
-                  <div class="stack-trace">org.testng.TestNGException: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for util.Element$2@264ff4b0 (tried for 30 second(s) with 500 milliseconds interval)
-	at util.Element.getErrorMessageToast(Element.java:111)
-	at element.FindElementForInvalidLogin.findElement(FindElementForInvalidLogin.java:23)
-	at tasks.InvalidLogin.invalidLogin(InvalidLogin.java:24)
-	at cases.InvalidLoginTest.runTest(InvalidLoginTest.java:13)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for util.Element$2@264ff4b0 (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at util.Element.getErrorMessageToast(Element.java:102)
-	... 23 more
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;joy-MacBook-Pro.local&apos;, ip: &apos;2001:b400:e20a:7599:99f:cf7b:fbdb:3069%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;10.0.1&apos;
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.iStaging.vrcameraphone...., appPackage: com.iStaging.vrcameraphone, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UIAutomator2, chromedriverExecutable: /Users/joyshen/node_modules..., databaseEnabled: false, desired: {appActivity: com.iStaging.vrcameraphone...., appPackage: com.iStaging.vrcameraphone, autoAcceptAlerts: true, autoGrantPermissions: true, automationName: UIAutomator2, chromedriverExecutable: /Users/joyshen/node_modules..., deviceName: SM-G930FD, platformName: android, platformVersion: 8.0.0, resetKeyboard: true, udid: 988633443234585742, unicodeKeyboard: true}, deviceApiLevel: 26, deviceManufacturer: samsung, deviceModel: SM-G930F, deviceName: 988633443234585742, deviceScreenDensity: 480, deviceScreenSize: 1080x1920, deviceUDID: 988633443234585742, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3, platform: LINUX, platformName: Android, platformVersion: 8.0.0, resetKeyboard: true, statBarHeight: 72, takesScreenshot: true, udid: 988633443234585742, unicodeKeyboard: true, viewportRect: {height: 1848, left: 0, top: 72, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 0619f0d4-28b0-45a1-8a9b-60d38bf06da0
-*** Element info: {Using=xpath, value=//*[contains(@text, &apos;User with this email/username does not exist.&apos;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:231)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:152)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at util.Element$2.apply(Element.java:104)
-	at util.Element$2.apply(Element.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 24 more
-... Removed 19 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-VRMaker_Automation_Test-class-failed -->
-          <div class="suite-VRMaker_Automation_Test-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">cases.WelcomePageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runTest">
-                  </a> <!-- runTest -->
-                  <span class="method-name">runTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: tabLivetour (tried for 3 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at util.Element.isDisplayed(Element.java:75)
-	at element.FindElementForWelcomePage.findElement(FindElementForWelcomePage.java:25)
-	at tasks.WelcomePage.welcomePage(WelcomePage.java:23)
-	at cases.WelcomePageTest.runTest(WelcomePageTest.java:14)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: tabLivetour
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;joy-MacBook-Pro.local&apos;, ip: &apos;2001:b400:e20a:7599:99f:cf7b:fbdb:3069%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;10.0.1&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:397)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 24 more
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-VRMaker_Automation_Test-class-failed -->
-          <div class="suite-VRMaker_Automation_Test-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">cases.CreateNewLiveTourTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runTest">
-                  </a> <!-- runTest -->
-                  <span class="method-name">runTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: textView12 (tried for 3 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at util.Element.clickWhenReady(Element.java:35)
-	at element.FindElementForCreateNewLiveTour.findElement(FindElementForCreateNewLiveTour.java:25)
-	at tasks.CreateNewLiveTour.createNewLiveTour(CreateNewLiveTour.java:34)
-	at cases.CreateNewLiveTourTest.runTest(CreateNewLiveTourTest.java:30)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: textView12
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;joy-MacBook-Pro.local&apos;, ip: &apos;2001:b400:e20a:7599:99f:cf7b:fbdb:3069%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;10.0.1&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:397)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 24 more
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-VRMaker_Automation_Test-class-failed -->
-          <div class="suite-VRMaker_Automation_Test-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">cases.AccountLoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runTest">
-                  </a> <!-- runTest -->
-                  <span class="method-name">runTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: tabLivetour (tried for 3 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at util.Element.isDisplayed(Element.java:75)
-	at element.FindElementForAccountLogin.findElement(FindElementForAccountLogin.java:24)
-	at tasks.AccountLogin.accountLogin(AccountLogin.java:22)
-	at cases.AccountLoginTest.runTest(AccountLoginTest.java:84)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: tabLivetour
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;joy-MacBook-Pro.local&apos;, ip: &apos;2001:b400:e20a:7599:99f:cf7b:fbdb:3069%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;10.0.1&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:397)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 24 more
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-VRMaker_Automation_Test-class-failed -->
-          <div class="suite-VRMaker_Automation_Test-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">cases.AccountLogoutTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runTest">
-                  </a> <!-- runTest -->
-                  <span class="method-name">runTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: navi_more (tried for 3 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at util.Element.clickWhenReady(Element.java:35)
-	at element.FindElementForAccountLogout.findElement(FindElementForAccountLogout.java:26)
-	at tasks.AccountLogout.accountLogout(AccountLogout.java:32)
-	at cases.AccountLogoutTest.runTest(AccountLogoutTest.java:29)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: navi_more
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;joy-MacBook-Pro.local&apos;, ip: &apos;2001:b400:e20a:7599:99f:cf7b:fbdb:3069%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;10.0.1&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:397)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 24 more
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-VRMaker_Automation_Test-class-failed -->
-          <div class="suite-VRMaker_Automation_Test-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">cases.DeleteLiveTourTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="runTest">
-                  </a> <!-- runTest -->
-                  <span class="method-name">runTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.id: textView12 (tried for 3 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at util.Element.clickWhenReady(Element.java:35)
-	at element.FindElementForDeleteLiveTour.findElement(FindElementForDeleteLiveTour.java:29)
-	at tasks.DeleteLiveTour.deleteLiveTour(DeleteLiveTour.java:23)
-	at cases.DeleteLiveTourTest.runTest(DeleteLiveTourTest.java:13)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.id: textView12
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:13:22.693Z&apos;
-System info: host: &apos;joy-MacBook-Pro.local&apos;, ip: &apos;2001:b400:e20a:7599:99f:cf7b:fbdb:3069%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;10.0.1&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:397)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 24 more
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-VRMaker_Automation_Test-class-failed -->
+          </div> <!-- suite-VRMaker_Automation_Test-class-passed -->
         </div> <!-- panel VRMaker_Automation_Test -->
         <div panel-name="test-xml-VRMaker_Automation_Test" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -435,12 +145,7 @@ Driver info: driver.version: unknown
     &lt;parameter name=&quot;password&quot; value=&quot;000000&quot;/&gt;
     &lt;parameter name=&quot;username&quot; value=&quot;joy@staging.com.tw&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;cases.InvalidLoginTest&quot;/&gt;
-      &lt;class name=&quot;cases.WelcomePageTest&quot;/&gt;
-      &lt;class name=&quot;cases.DeleteLiveTourTest&quot;/&gt;
-      &lt;class name=&quot;cases.AccountLoginTest&quot;/&gt;
-      &lt;class name=&quot;cases.AccountLogoutTest&quot;/&gt;
-      &lt;class name=&quot;cases.CreateNewLiveTourTest&quot;/&gt;
+      &lt;class name=&quot;cases.ImportPhotosFromGalleryTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- regression test --&gt;
 &lt;/suite&gt; &lt;!-- VRMaker Automation Test --&gt;
@@ -454,7 +159,7 @@ Driver info: driver.version: unknown
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">regression test (6 classes)</span>
+                <span class="test-name">regression test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -480,31 +185,11 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runTest')
-data.setCell(0, 2, 'cases.InvalidLoginTest')
-data.setCell(0, 3, 35526);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'runTest')
-data.setCell(1, 2, 'cases.WelcomePageTest')
-data.setCell(1, 3, 23138);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'runTest')
-data.setCell(2, 2, 'cases.DeleteLiveTourTest')
-data.setCell(2, 3, 12886);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'runTest')
-data.setCell(3, 2, 'cases.CreateNewLiveTourTest')
-data.setCell(3, 3, 12631);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'runTest')
-data.setCell(4, 2, 'cases.AccountLogoutTest')
-data.setCell(4, 3, 12286);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'runTest')
-data.setCell(5, 2, 'cases.AccountLoginTest')
-data.setCell(5, 3, 12172);
+data.setCell(0, 2, 'cases.ImportPhotosFromGalleryTest')
+data.setCell(0, 3, 116527);
 window.suiteTableData['VRMaker_Automation_Test']= { tableData: data, tableDiv: 'times-div-VRMaker_Automation_Test'}
 return data;
 }
@@ -535,105 +220,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">cases.InvalidLoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">cases.ImportPhotosFromGalleryTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(joy@staging.com.tw, 000000)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runTest</span>
-                <span class="method-start">20662 ms</span>
+                <span class="method-start">18481 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=runTest status=FAILURE method=InvalidLoginTest.runTest()[pri:0, instance:cases.Inva...)</span>
-                <span class="method-start">56193 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">cases.WelcomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(joy@staging.com.tw, 000000)</span>
-                <span class="method-start">58107 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runTest</span>
-                <span class="method-start">77406 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=runTest status=FAILURE method=WelcomePageTest.runTest()[pri:0, instance:cases.Welco...)</span>
-                <span class="method-start">100546 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">cases.DeleteLiveTourTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(joy@staging.com.tw, 000000)</span>
-                <span class="method-start">102205 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runTest</span>
-                <span class="method-start">120853 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=runTest status=FAILURE method=DeleteLiveTourTest.runTest()[pri:0, instance:cases.De...)</span>
-                <span class="method-start">133741 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">cases.AccountLoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(joy@staging.com.tw, 000000)</span>
-                <span class="method-start">135189 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runTest</span>
-                <span class="method-start">153609 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=runTest status=FAILURE method=AccountLoginTest.runTest()[pri:0, instance:cases.Acco...)</span>
-                <span class="method-start">165782 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">cases.AccountLogoutTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(joy@staging.com.tw, 000000)</span>
-                <span class="method-start">167240 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runTest</span>
-                <span class="method-start">187447 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=runTest status=FAILURE method=AccountLogoutTest.runTest()[pri:0, instance:cases.Acc...)</span>
-                <span class="method-start">199734 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">cases.CreateNewLiveTourTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(joy@staging.com.tw, 000000)</span>
-                <span class="method-start">201158 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runTest</span>
-                <span class="method-start">219459 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=runTest status=FAILURE method=CreateNewLiveTourTest.runTest()[pri:0, instance:cases...)</span>
-                <span class="method-start">232091 ms</span>
+                <span class="method-name">tearDown([TestResult name=runTest status=SUCCESS method=ImportPhotosFromGalleryTest.runTest()[pri:0, instance...)</span>
+                <span class="method-start">135009 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

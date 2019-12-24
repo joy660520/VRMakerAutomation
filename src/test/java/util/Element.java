@@ -4,6 +4,7 @@ import java.io.File;
 import java.time.Duration;
 import java.util.List;
 import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -96,7 +97,7 @@ public class Element {
 			throw new TestNGException(e);
 		}
 	}
-	
+
 	public String getErrorMessageToast(By element) {
 		try {
 			WebElement element1 = new WebDriverWait(driver, 30).until(new ExpectedCondition<WebElement>() {
@@ -110,7 +111,7 @@ public class Element {
 		} catch (Exception e) {
 			throw new TestNGException(e);
 		}
-		
+
 	}
 
 	public String getRandomString() throws InterruptedException {
@@ -132,16 +133,59 @@ public class Element {
 		int height = driver.manage().window().getSize().height;
 		for (int i = 1; i <= 3; i++) {
 			TouchAction action = new TouchAction(driver);
-			action.press(PointOption.point(width * 9 / 10, height / 2)).moveTo(PointOption.point(width / 10, height / 2))
-					.release().perform();
-			
-			//skip welcomepage
-//			Duration duration = Duration.ofSeconds(3);
-//			TouchAction ta = new TouchAction(driver).press(PointOption.point(width / 2, height * 3 / 4))
-//					.waitAction(WaitOptions.waitOptions(duration)).moveTo(PointOption.point(width / 2, height / 4))
-//					.release();
-//			ta.perform();
+			action.press(PointOption.point(width * 9 / 10, height / 2))
+					.moveTo(PointOption.point(width / 10, height / 2)).release().perform();
+
+			// skip welcomepage
+			// Duration duration = Duration.ofSeconds(3);
+			// TouchAction ta = new TouchAction(driver).press(PointOption.point(width / 2,
+			// height * 3 / 4))
+			// .waitAction(WaitOptions.waitOptions(duration)).moveTo(PointOption.point(width
+			// / 2, height / 4))
+			// .release();
+			// ta.perform();
 		}
+	}
+
+	public void slideToHistoryPage() {
+		int width = driver.manage().window().getSize().width;
+		int height = driver.manage().window().getSize().height;
+		for (int i = 1; i <= 1; i++) {
+			TouchAction action = new TouchAction(driver);
+			action.press(PointOption.point(width * 9 / 10, height / 2))
+					.moveTo(PointOption.point(width / 10, height / 2)).release().perform();
+		}
+	}
+
+	public void selectPhotosFromGallery() {
+		List<WebElement> element = driver.findElements(By.id(Constants.SELECT_PHOTO_CHECK_BTN_ID));
+		int size = element.size();
+		for (int i = 0; i < size; i++) {
+			element.get(i).click();
+		}
+	}
+
+	public int checkImportPhotoNumber() {
+		List<WebElement> element = driver.findElements(By.id(Constants.CHECK_IMPORT_PHOTO_NUMBER_ID));
+		int size = element.size();
+		for (int i = 0; i < size; i++) {
+			System.out.println("pano number: " + i);
+		}
+		return size;
+
+	}
+
+	public void waitForVisible(final By by, int waitTime) throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver, waitTime);
+		for (int attempt = 0; attempt < waitTime; attempt++) {
+			try {
+				driver.findElement(by);
+				break;
+			} catch (Exception ee) {
+				driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+			}
+		}
+		wait.until(ExpectedConditions.visibilityOfElementLocated(by));
 	}
 
 }
