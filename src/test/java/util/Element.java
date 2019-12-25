@@ -187,5 +187,17 @@ public class Element {
 		}
 		wait.until(ExpectedConditions.visibilityOfElementLocated(by));
 	}
+	
+	public void waitForVisibleForToast(final By by, int waitTime) throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver, waitTime);
+		for (int attempt = 0; attempt < waitTime; attempt++) {
+			try {
+				getToast(by);
+				break;
+			} catch (Exception ee) {
+				driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+			}
+		}
+	}
 
 }

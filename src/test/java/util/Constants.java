@@ -38,7 +38,7 @@ public class Constants {
 	public static final String ACTION_SAVE_BTN_ID = "action_save";
 	public static final String LIVETOUR_TITLE_ID = "title";
 	public static final String BUILDING_DETAIL_PAGE_EDIT_BTN_ID="edit";
-//	public static final String PANO_NAME_XPATH = "//android.widget.TextView[contains(@text,'Others')]";
+	public static final String IMPORT_PHOTOS_TOAST_XPATH = "//*[contains(@text, '成功')]";
 	public static final String CHECK_IMPORT_PHOTO_NUMBER_ID = "rootView";
 
 	// delete livetour
